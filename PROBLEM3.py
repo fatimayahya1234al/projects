@@ -1,44 +1,48 @@
-def display_menu():
+def DisplayMenu():
     print("Menu:")
     print("1. Display a right-angle triangle of ones")
     print("2. Display a Palindromic Triangle")
     print("3. Help")
     print("4. Exit")
 
-def right_angle_triangle_of_ones(x):
+def RightAngleTriangleOfOnes(x):
     for y in range(1, x + 1):
         print('1 ' * y)
 
-def palindromic_triangle(x):
-    for y in range(1, x + 1):
+def PalindromicTriangle(x):
+    for y in range(1, x+1):
 
         print(' ' * (x - y), end='')
 
-        for w in range(1, y + 1):
+        for w in range(1, y+1):
             print(y, end='')
 
-        for w in range(y - 1, 0, -1):
+        for w in range(y-1, 0, -1):
             print(w, end='')
         print()
 
 def help_menu():
     print("Help:")
-    print("1. Display a right-angle triangle of ones: Displays a triangle with 1s in a right-angle triangle form.")
-    print("2. Display a Palindromic Triangle: Displays a triangle with numbers forming a palindrome in each row.")
-    print("3. Help: Displays this help menu.")
-    print("4. Exit: Exits the program.")
+    print("A Palindromic Triangle is a triangular array of numbers where each row forms a palindrome.")
+    print("The first few lines of a Palindromic Triangle are:")
+    print("1")
+    print("11")
+    print("121")
+    print("12321")
+    print("1234321")
+    print("You can use this pattern to draw a Palindromic Triangle for any number of lines")
 
 def main():
     while True:
-        display_menu()
+        DisplayMenu()
         choice = input("Enter your choice (1-4): ")
         
         if choice == '1':
             n = int(input("Enter the number of rows: "))
-            right_angle_triangle_of_ones(n)
+            RightAngleTriangleOfOnes(n)
         elif choice == '2':
             n = int(input("Enter the number of rows: "))
-            palindromic_triangle(n)
+            PalindromicTriangle(n)
         elif choice == '3':
             help_menu()
         elif choice == '4':
@@ -50,3 +54,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
