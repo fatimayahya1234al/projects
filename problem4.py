@@ -1,4 +1,4 @@
-def generateEvenSquares(numbers):
+def GenerateEvenSquares(numbers):
     EvenSquares = [num ** 2 for num in numbers if num % 2 == 0]
     return EvenSquares
 
@@ -11,7 +11,7 @@ def main():
         NumbersInput = input("Enter The List of integers: ")
         numbers = list(map(int, NumbersInput.split()))
 
-        EvenSquares = generateEvenSquares(numbers)
+        EvenSquares = GenerateEvenSquares(numbers)
         print(f"List Squares of Even Numbers: {EvenSquares}")
 
         start = int(input("Enter start index: "))

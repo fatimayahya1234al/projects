@@ -4,7 +4,7 @@ def UserName(username):
     if not username:
         return "Username cannot be empty."
     if len(username) > 30:
-        return "Username cannot exceed 50 characters!"
+        return "Username cannot exceed 30 characters!"
     return None
 
 def Password(password):

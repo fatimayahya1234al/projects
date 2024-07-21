@@ -1,4 +1,4 @@
-def decimal_to_binary(x):
+def DecimalToBinary(x):
     if x == 0:
         return "0"
     
@@ -10,6 +10,6 @@ def decimal_to_binary(x):
     
     return binary
 
-decimal_number = int(input("Please input a positive decimal number: "))
-binary_equivalent = decimal_to_binary(decimal_number)
-print(f"The binary representation of {decimal_number} is {binary_equivalent}")
+DecimalNumber = int(input("Please input a positive decimal number: "))
+binary_equivalent = DecimalToBinary(DecimalNumber)
+print(f"The binary representation of {DecimalNumber} is {binary_equivalent}")

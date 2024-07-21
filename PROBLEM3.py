@@ -10,12 +10,10 @@ def RightAngleTriangleOfOnes(x):
         print('1 ' * y)
 
 def PalindromicTriangle(x):
-    for y in range(1, x+1):
-
-        print(' ' * (x - y), end='')
+    for y in range(1, x + 1):
 
         for w in range(1, y+1):
-            print(y, end='')
+            print(w, end='')
 
         for w in range(y-1, 0, -1):
             print(w, end='')
